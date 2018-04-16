@@ -1,0 +1,8 @@
+proxy:
+  image: qautomatron/docker-3proxy:latest
+  container_name: 3proxy
+  restart: always
+  ports:
+    - 6666:6666
+  volumes:
+    - ./config.cfg:/etc/3proxy/3proxy.cfg:ro
